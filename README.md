@@ -17,3 +17,5 @@ Completed user stories:
 
 Walkthrough of all user stories:
 
+https://cloud.githubusercontent.com/assets/14814640/10418461/a00150c4-7010-11e5-8dce-bdad447b42b4.gif
+
