@@ -69,7 +69,7 @@ public class PhotosActivity extends AppCompatActivity {
 
                     for (int i = 0; i < photosJSON.length(); i++) {
                         JSONObject photoJSON = photosJSON.getJSONObject(i);
-                        int commentCount = photoJSON.getJSONObject("comments").getJSONArray("data").length();
+                        int numComments = photoJSON.getJSONObject("comments").getJSONArray("data").length();
                         InstagramPhoto photo = new InstagramPhoto(
                                 photoJSON.getJSONObject("user").getString("username"),
                                 photoJSON.getJSONObject("caption").getString("text"),
@@ -77,8 +77,9 @@ public class PhotosActivity extends AppCompatActivity {
                                 photoJSON.getJSONObject("images").getJSONObject("standard_resolution").getInt("height"),
                                 photoJSON.getJSONObject("likes").getInt("count"),
                                 photoJSON.getJSONObject("user").getString("profile_picture"),
-                                photoJSON.getJSONObject("comments").getJSONArray("data").getJSONObject(commentCount - 1).getJSONObject("from").getString("username"),
-                                photoJSON.getJSONObject("comments").getJSONArray("data").getJSONObject(commentCount - 1).getString("text")
+                                photoJSON.getJSONObject("comments").getJSONArray("data").getJSONObject(numComments - 1).getJSONObject("from").getString("username"),
+                                photoJSON.getJSONObject("comments").getJSONArray("data").getJSONObject(numComments - 1).getString("text"),
+                                photoJSON.getJSONObject("comments").getInt("count")
                         );
                         photos.add(photo);
                     }

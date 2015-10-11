@@ -35,12 +35,14 @@ public class InstagramPhotosAdapter extends ArrayAdapter<InstagramPhoto> {
         TextView tvLikes = (TextView) convertView.findViewById(R.id.tvLikes);
         TextView tvComment = (TextView) convertView.findViewById(R.id.tvComment);
         TextView tvCommentUser = (TextView) convertView.findViewById(R.id.tvCommentUser);
+        TextView tvCommentCount = (TextView) convertView.findViewById(R.id.tvCommentCount);
 
         tvCaption.setText(photo.caption);
         tvUsername.setText(photo.username);
         tvLikes.setText("\u2665" + photo.likes + " likes");
         tvComment.setText(photo.latestComment);
         tvCommentUser.setText(photo.latestCommentUser + ": ");
+        tvCommentCount.setText("View all " + photo.commentCount + " comments");
 
         ivPhoto.setImageResource(0);
         ivProfile.setImageResource(0);

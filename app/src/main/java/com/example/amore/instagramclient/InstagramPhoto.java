@@ -13,9 +13,10 @@ public class InstagramPhoto {
     public String userProfileUrl;
     public String latestCommentUser;
     public String latestComment;
+    public int commentCount;
 
     public InstagramPhoto(String username, String caption, String imageUrl, int imageHeight,
-                          int likes, String userProfileUrl, String latestCommentUser, String latestComment) {
+                          int likes, String userProfileUrl, String latestCommentUser, String latestComment, int commentCount) {
         this.username = username;
         this.caption = caption;
         this.imageUrl = imageUrl;
@@ -24,5 +25,6 @@ public class InstagramPhoto {
         this.userProfileUrl = userProfileUrl;
         this.latestCommentUser = latestCommentUser;
         this.latestComment = latestComment;
+        this.commentCount = commentCount;
     }
 }
