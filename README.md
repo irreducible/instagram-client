@@ -11,7 +11,7 @@ Completed user stories:
  * [x] Optional: For each photo displayed, user can see the following details: Latest Comment, Latest Commenter username, Number of likes, Number of comments
  * [x] Optional: Added pull-to-refresh for popular stream with SwipeRefreshLayout
  * [x] Optional: Showing latest comment for each photo
- * [x] Optional: Display each user profile image using a CircleImageView
+ * [x] Optional: Displayed each user profile image using a CircleImageView
  * [x] Optional: Improved the user interface through styling, coloring and nested layouts
  
 
